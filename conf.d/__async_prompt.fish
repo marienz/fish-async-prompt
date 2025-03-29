@@ -18,7 +18,7 @@ function __async_prompt_setup_on_startup --on-event fish_prompt
     end
 end
 
-function __async_prompt_keep_last_pipestatus
+function __async_prompt_keep_last_pipestatus --on-event fish_prompt
     set -g __async_prompt_last_pipestatus $pipestatus
 end
 
